@@ -17,8 +17,20 @@ def askfileandread():
 
 def encrypt():
     print("\nChoose your encryption type :")
-    print("1) Simple encryption\n2) Double encryption\n3) Encryption + Reverse\n4) Double encryption + Reverse\n")
-    a = int(input(">>> "))
+    print("1) Simple encryption\n2) Double encryption\n3) Encryption + Reverse\n4) Double encryption + Reverse\n5) Main Menu\n")
+    while True:
+            try:
+                a = int(input(">>> "))
+            except:
+                print("Invalid entry ! Retry.")
+                continue
+            if a == 5:
+                return
+            if 1 <= a <= 4:
+                break
+            else:
+                print("Invalid entry ! Retry.")
+                continue
     print("\nChoose your file...")
 
     chaine = askfileandread()
@@ -44,7 +56,7 @@ def encrypt():
 
 def decrypt():
     print("\nChoose your decryption type :")
-    print("1) Simple decryption\n2) Double decryption\n3) Decryption + Reverse\n4) Double decryption + Reverse\n")
+    print("1) Simple decryption\n2) Double decryption\n3) Decryption + Reverse\n4) Double decryption + Reverse\n5) Main Menu\n")
     a = int(input(">>> "))
     print("\nChoose your file...")
 
@@ -80,6 +92,8 @@ def main():
             decrypt()
         elif c == 3:
             break
+        else:
+            print("Invalid entry ! Retry.")
 
 if __name__ == "__main__":
     main()
