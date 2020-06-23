@@ -1,3 +1,4 @@
+'''
 class reverse():
     def string(): 
         welcome=' Welcome to Strings reverser '
@@ -14,7 +15,7 @@ class reverse():
                     a-=1
                     result+=y
             print(result)
-
+'''
 '''
     def for_lists():
         welcome=' Welcome to list reverser '
@@ -40,8 +41,8 @@ class reverse():
             print(result)
 
 '''
-    
+'''    
 if __name__ == "__main__":
     w=reverse.string()
     #w=reverse.for_lists()
-    
+  '''  
