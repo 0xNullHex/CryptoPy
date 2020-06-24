@@ -5,14 +5,14 @@ import vigenere
 
 def askfileandread():
     fenetre = Tk()
-    filename = filedialog.askopenfilename(filetypes=[("Fichiers texte", ".txt")])
+    filename = filedialog.askopenfilename(filetypes=[("Text files", ".txt")])
     fenetre.destroy()
     if len(filename) == 0:
         print("No file chosen. Aborting !")
         return False
-    fichier = open(filename, 'r')
-    chaine = fichier.read()
-    fichier.close()
+    file = open(filename, 'r')
+    chaine = file.read()
+    file.close()
     return chaine
 
 def crypt(choice):
@@ -47,28 +47,28 @@ def crypt(choice):
 
     if a == 1:
         if choice == 1:
-            result = vigenere.chiff(chaine,clef)
+            result = vigenere.encrypt(chaine,clef)
         else: 
-            result = vigenere.dechiff(chaine,clef)
+            result = vigenere.decrypt(chaine,clef)
     elif a == 2:
         if choice == 1:
-            result = vigenere.chiff(vigenere.chiff(chaine,clef),clef)
+            result = vigenere.encrypt(vigenere.encrypt(chaine,clef),clef)
         else:
-            result = vigenere.dechiff(vigenere.dechiff(chaine,clef),clef)
+            result = vigenere.decrypt(vigenere.decrypt(chaine,clef),clef)
     elif a == 3:
         if choice == 1:
-            result = vigenere.reverse(vigenere.chiff(chaine,clef))
+            result = vigenere.reverse(vigenere.encrypt(chaine,clef))
         else:
-            result = vigenere.dechiff(vigenere.reverse(chaine),clef)
+            result = vigenere.decrypt(vigenere.reverse(chaine),clef)
     elif a == 4:
         if choice == 1:
-            result = vigenere.reverse(vigenere.chiff(vigenere.chiff(chaine,clef),clef))
+            result = vigenere.reverse(vigenere.encrypt(vigenere.encrypt(chaine,clef),clef))
         else:
-            result = vigenere.dechiff(vigenere.dechiff(vigenere.reverse(chaine),clef),clef)
+            result = vigenere.decrypt(vigenere.decrypt(vigenere.reverse(chaine),clef),clef)
 
-    fichier = open(output, 'w')
-    fichier.write(result)
-    fichier.close()
+    file = open(output, 'w')
+    file.write(result)
+    file.close()
     print("Encrypted file saved in " + output)
 
 def main():
