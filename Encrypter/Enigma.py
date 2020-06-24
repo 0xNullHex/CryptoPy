@@ -18,8 +18,6 @@ class MainScript(QWidget):
         self.ui.pushButtonDecryption2D.clicked.connect(self.Decryption2D)
         self.ui.pushButtonEncryptionER.clicked.connect(self.EnrcyptionER)
         self.ui.pushButtonDecryptionRD.clicked.connect(self.DecryptionRD)
-        self.ui.pushButtonEncryption2ER.clicked.connect(self.Enrcyption2ER)
-        self.ui.pushButtonDecryption2RD.clicked.connect(self.Decryption2RD)
         self.show()
 
 
@@ -446,11 +444,6 @@ class MainScript(QWidget):
         
 
 
-
-    def Enrcyption2ER(self):
-        pass
-    def Decryption2RD(self):
-        pass
 
 
 if __name__=="__main__":
