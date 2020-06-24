@@ -53,7 +53,7 @@ class MainScript(QWidget):
                 if clef_i == len(clef):
                     clef_i = 0
         self.ui.labelStatus.setText("Status: Encryption Done!")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-enc.txt", 'w')
         fichier.write(chiff)
         fichier.close()
     
@@ -92,7 +92,7 @@ class MainScript(QWidget):
                 if clef_i == len(clef):
                     clef_i = 0      
         self.ui.labelStatus.setText("Decryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-dec.txt", 'w')
         fichier.write(chiff)
         fichier.close()
          
@@ -149,7 +149,7 @@ class MainScript(QWidget):
             if clef_i == len(clef):
                 clef_i = 0
         self.ui.labelStatus.setText("Status: Double Encryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-enc.txt", 'w')
         fichier.write(FinalChiff)
         fichier.close()
         
@@ -211,7 +211,7 @@ class MainScript(QWidget):
                 if clef_i == len(clef):
                     clef_i = 0
         self.ui.labelStatus.setText("Double Decryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-dec.txt", 'w')
         fichier.write(FinalChiff)
         fichier.close()
         
@@ -272,7 +272,7 @@ class MainScript(QWidget):
             if clef_i == len(clef):
                 clef_i = 0
         self.ui.labelStatus.setText("Status: Double Encryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-enc.txt", 'w')
         fichier.write(FinalChiff)
         fichier.close()
         
@@ -334,7 +334,7 @@ class MainScript(QWidget):
                 if clef_i == len(clef):
                     clef_i = 0
         self.ui.labelStatus.setText("Double Decryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-dec.txt", 'w')
         fichier.write(FinalChiff)
         fichier.close()
         
@@ -386,7 +386,7 @@ class MainScript(QWidget):
                                 a-=1
                                 FinalChiff+=y
         self.ui.labelStatus.setText("Status: Reverse Encryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-enc.txt", 'w')
         fichier.write(FinalChiff)
         fichier.close()
         
@@ -438,7 +438,7 @@ class MainScript(QWidget):
 
 
         self.ui.labelStatus.setText("Reversed Decryption Done! ")
-        fichier = open(filename, 'w')
+        fichier = open(filename[:-4]+"-dec.txt", 'w')
         fichier.write(chiff)
         fichier.close()
         
