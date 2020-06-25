@@ -1,10 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QFileDialog,QWidget,QApplication,QPushButton,QLabel,QInputDialog,QDialog
 from EnigmaGUI import *
-from tkinter import filedialog
-from tkinter import *
 import vigenere
-import time
 
 class MainScript(QWidget):
     def __init__(self):
