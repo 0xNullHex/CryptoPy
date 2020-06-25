@@ -69,7 +69,7 @@ def crypt(choice):
     if not file is None:
         file.write(result) # Writing into chosen directory
         file.close()
-        print("Encrypted file saved in " + file.name)
+        print(word[:-3] + "ed file saved in " + file.name)
     else:
         print("Cancelled. File not saved !")
     
