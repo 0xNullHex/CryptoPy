@@ -14,6 +14,8 @@ class MainScript(QWidget):
         self.ui.pushButtonDecryption2D.clicked.connect(self.double_decryption)
         self.ui.pushButtonEncryptionER.clicked.connect(self.encryption_rev)
         self.ui.pushButtonDecryptionRD.clicked.connect(self.decryption_rev)
+        self.ui.pushButtonDecryptionDER.clicked.connect(self.double_enrcyption_rev)
+        self.ui.pushButtonDecryptionDRD.clicked.connect(self.double_decryption_rev)
         self.show()
 
     def encryption(self): self.crypt(1,1)
@@ -27,6 +29,10 @@ class MainScript(QWidget):
     def encryption_rev(self): self.crypt(1,3)
 
     def decryption_rev(self): self.crypt(2,3)
+
+    def double_enrcyption_rev(self): self.crypt(1,4)
+
+    def double_decryption_rev(self): self.crypt(2,4)
 
     def askfileandread(self):
         # File chosing dialog
