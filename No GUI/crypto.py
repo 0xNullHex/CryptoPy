@@ -11,9 +11,9 @@ def askfileandread():
         print("No file chosen. Back to main menu !")
         return False
     file = open(filename, 'r')
-    chaine = file.read()
+    sequence = file.read()
     file.close()
-    return chaine
+    return sequence
 
 def crypt(choice):
     word = "encryption" if choice == 1 else "decryption" # Choice 1 is encryption, Choice 2 is decryption
@@ -33,33 +33,33 @@ def crypt(choice):
                 print("Invalid entry ! Retry.")
                 continue
     print("\nChoose your file...")
-    chaine = askfileandread()
-    if chaine == False:
+    sequence = askfileandread()
+    if sequence == False:
         return
 
     result = ""
-    clef = input("Enter " + word + " key : ")
+    key = input("Enter " + word + " key : ")
 
     if a == 1:
         if choice == 1:
-            result = vigenere.encrypt(chaine,clef) # Simple encryption
+            result = vigenere.encrypt(sequence,key) # Simple encryption
         else: 
-            result = vigenere.decrypt(chaine,clef) # Simple decryption
+            result = vigenere.decrypt(sequence,key) # Simple decryption
     elif a == 2:
         if choice == 1:
-            result = vigenere.encrypt(vigenere.encrypt(chaine,clef),clef) # Double encryption
+            result = vigenere.encrypt(vigenere.encrypt(sequence,key),key) # Double encryption
         else:
-            result = vigenere.decrypt(vigenere.decrypt(chaine,clef),clef) # Double decryption
+            result = vigenere.decrypt(vigenere.decrypt(sequence,key),key) # Double decryption
     elif a == 3:
         if choice == 1:
-            result = vigenere.reverse(vigenere.encrypt(chaine,clef)) # Simple encryption + reverse
+            result = vigenere.reverse(vigenere.encrypt(sequence,key)) # Simple encryption + reverse
         else:
-            result = vigenere.decrypt(vigenere.reverse(chaine),clef) # Reverse + simple decryption
+            result = vigenere.decrypt(vigenere.reverse(sequence),key) # Reverse + simple decryption
     elif a == 4:
         if choice == 1:
-            result = vigenere.reverse(vigenere.encrypt(vigenere.encrypt(chaine,clef),clef)) # Double encryption + reverse
+            result = vigenere.reverse(vigenere.encrypt(vigenere.encrypt(sequence,key),key)) # Double encryption + reverse
         else:
-            result = vigenere.decrypt(vigenere.decrypt(vigenere.reverse(chaine),clef),clef) # Reverse + double decryption
+            result = vigenere.decrypt(vigenere.decrypt(vigenere.reverse(sequence),key),key) # Reverse + double decryption
     
     # File chosing dialog
     print("Choose where to save the " + word[:-3] + "ed file...")
