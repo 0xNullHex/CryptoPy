@@ -35,7 +35,7 @@
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>100</y>
+     <y>110</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -100,7 +100,7 @@ color: rgb(48, 163, 230);</string>
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>100</y>
+     <y>110</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -140,7 +140,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>190</y>
+     <y>200</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -180,7 +180,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>190</y>
+     <y>200</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -220,7 +220,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>280</y>
+     <y>290</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -260,7 +260,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>280</y>
+     <y>290</y>
      <width>171</width>
      <height>53</height>
     </rect>
@@ -300,7 +300,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>63</y>
+     <y>73</y>
      <width>141</width>
      <height>20</height>
     </rect>
@@ -316,7 +316,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>160</y>
+     <y>170</y>
      <width>141</width>
      <height>20</height>
     </rect>
@@ -332,7 +332,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>250</y>
+     <y>260</y>
      <width>141</width>
      <height>20</height>
     </rect>
@@ -348,7 +348,7 @@ color: rgb(84, 157, 219);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>440</y>
+     <y>460</y>
      <width>401</width>
      <height>41</height>
     </rect>
@@ -363,97 +363,17 @@ color: rgb(84, 157, 219);</string>
 color: rgb(48, 163, 230);</string>
    </property>
    <property name="text">
-    <string>Status: Standup</string>
+    <string>Status: Standby</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonEncryption2ER">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>370</y>
-     <width>171</width>
-     <height>53</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>8</pointsize>
-     <weight>75</weight>
-     <italic>false</italic>
-     <bold>true</bold>
-     <underline>false</underline>
-     <strikeout>false</strikeout>
-     <stylestrategy>PreferAntialias</stylestrategy>
-    </font>
-   </property>
-   <property name="contextMenuPolicy">
-    <enum>Qt::DefaultContextMenu</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(36, 47, 61);
-color: rgb(84, 157, 219);</string>
-   </property>
-   <property name="text">
-    <string>Double Revese Encryption</string>
-   </property>
-   <property name="autoDefault">
-    <bool>true</bool>
-   </property>
-   <property name="default">
-    <bool>false</bool>
-   </property>
-   <property name="flat">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButtonDecryption2RD">
-   <property name="geometry">
-    <rect>
-     <x>200</x>
-     <y>370</y>
-     <width>171</width>
-     <height>53</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>8</pointsize>
-     <weight>75</weight>
-     <italic>false</italic>
-     <bold>true</bold>
-     <underline>false</underline>
-     <strikeout>false</strikeout>
-     <stylestrategy>PreferAntialias</stylestrategy>
-    </font>
-   </property>
-   <property name="contextMenuPolicy">
-    <enum>Qt::DefaultContextMenu</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(36, 47, 61);
-color: rgb(84, 157, 219);</string>
-   </property>
-   <property name="text">
-    <string>Double Reverse Decryption</string>
-   </property>
-   <property name="autoDefault">
-    <bool>true</bool>
-   </property>
-   <property name="default">
-    <bool>false</bool>
-   </property>
-   <property name="flat">
-    <bool>false</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>340</y>
+     <y>350</y>
      <width>141</width>
      <height>20</height>
     </rect>
@@ -462,7 +382,87 @@ color: rgb(84, 157, 219);</string>
     <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>Extreme security Level :</string>
+    <string>High security Level :</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonEncryptionDER">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>380</y>
+     <width>171</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(36, 47, 61);
+color: rgb(84, 157, 219);</string>
+   </property>
+   <property name="text">
+    <string>Revese Double Encryption</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDecryptionDRD">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>380</y>
+     <width>171</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <stylestrategy>PreferAntialias</stylestrategy>
+    </font>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(36, 47, 61);
+color: rgb(84, 157, 219);</string>
+   </property>
+   <property name="text">
+    <string>Reverse Double Decryption</string>
+   </property>
+   <property name="autoDefault">
+    <bool>true</bool>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
    </property>
   </widget>
  </widget>
