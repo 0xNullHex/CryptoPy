@@ -74,9 +74,11 @@ class MainScript(QWidget):
         # File chosing dialog
         file = QFileDialog.getSaveFileName(self,"Save the " + word[:-3] + "ed File",filter='*.txt')[0]
         if file:
-            file = open(file + ".txt",'w')
-            file.write(result) # Writing into chosen directory
-            file.close()
+            if file[-4:] != ".txt":
+                file += ".txt"
+            f = open(file,'w')
+            f.write(result) # Writing into chosen directory
+            f.close()
             self.ui.labelStatus.setText((word + " done ! ").title())
         else:
             self.ui.labelStatus.setText("Cancelled. File not saved !")
