@@ -214,6 +214,6 @@ class Ui_Form(object):
         self.label_2.setText(_translate("Form", "Medium security level :"))
         self.label_3.setText(_translate("Form", "High security Level :"))
         self.labelStatus.setText(_translate("Form", "Status: Standby"))
-        self.label_5.setText(_translate("Form", "High security Level :"))
+        self.label_5.setText(_translate("Form", "Extreme security Level :"))
         self.pushButtonEncryptionDER.setText(_translate("Form", "Revese Double Encryption"))
         self.pushButtonDecryptionDRD.setText(_translate("Form", "Reverse Double Decryption"))
