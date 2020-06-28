@@ -1,3 +1,10 @@
+'''
+Script Made by:
+    Mehdi Essalehi aka The genius
+    Mansour Boucitta aka xSnipeRGh0sTx
+'''
+
+
 import sys
 from PyQt5.QtWidgets import QFileDialog,QWidget,QApplication,QPushButton,QLabel,QInputDialog,QDialog
 from CryptoGUI import *
